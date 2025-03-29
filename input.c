@@ -15,8 +15,8 @@ char* get_string(void)
     ssize_t read;
 
     read = getline(&text, &len, stdin);
-    return text;
     atexit(free_memory);
+    return text;
 }
 
 int get_int(void)
