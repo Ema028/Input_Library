@@ -22,20 +22,20 @@ char* get_string(void)
 int get_int(void)
 {
     int x;
-    scanf("%i\n", &x);
+    scanf("%i", &x);
     return x;
 }
 
 float get_float(void)
 {
     float x;
-    scanf("%f\n", &x);
+    scanf("%f", &x);
     return x;
 }
 
 char get_char(void)
 {
     char x;
-    scanf("%c\n", &x);
+    scanf("%c", &x);
     return x;
 }
