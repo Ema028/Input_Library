@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define F fflush(stdout)
+
 char* text = NULL;
 
 void free_memory(void)
@@ -22,20 +24,20 @@ char* get_string(void)
 int get_int(void)
 {
     int x;
-    scanf("%i", &x);
+    scanf("%i", &x); F;
     return x;
 }
 
 float get_float(void)
 {
     float x;
-    scanf("%f", &x);
+    scanf("%f", &x); F;
     return x;
 }
 
 char get_char(void)
 {
     char x;
-    scanf("%c", &x);
+    scanf("%c", &x); F;
     return x;
 }
